@@ -1,31 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>IMC Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1><span>IMC</span> Calculator</h1>
+      <h1><span>IMC</span> Calculator</h1>
 
-        <form>
-            <div class="inputs-container">
-                <div class="input-group">
-                    <label for="height">Votre taille en centimètres</label>
-                    <input type="number" placeholder="Votre taille en centimètres" id="height" class="height-input">
-                </div>
-                <div class="input-group">
-                    <label for="weight">Votre poids en kilogrammes</label>
-                    <input type="number" placeholder="Votre poids en kilogrammes" id="weight" class="weight-input">
-                </div>
-            </div>
-            <button>Calculer votre IMC</button>
-        </form>
-        <div class="info">
-            <p class="bmi-value">0</p>
-            <p class="result">En attente du résultat...</p>
+      <form>
+        <div class="inputs-container">
+          <div class="input-group">
+            <label for="height">Votre taille en centimètres</label>
+            <input
+              type="number"
+              placeholder="Votre taille en centimètres"
+              id="height"
+              class="height-input"
+            />
+          </div>
+          <div class="input-group">
+            <label for="weight">Votre poids en kilogrammes</label>
+            <input
+              type="number"
+              placeholder="Votre poids en kilogrammes"
+              id="weight"
+              class="weight-input"
+            />
+          </div>
         </div>
+        <button>Calculer votre IMC</button>
+      </form>
+      <div class="info">
+        <p class="bmi-value">0</p>
+        <p class="result">En attente du résultat...</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>

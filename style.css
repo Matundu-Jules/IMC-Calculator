@@ -1,0 +1,71 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* RESET */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #f1f1f1;
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+}
+
+/*  */
+.container {
+  max-width: 850px;
+  background-color: #363636;
+  border: 1px solid #363636;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+h1 span {
+  font-weight: 700;
+}
+
+/* FORM */
+.inputs-container {
+  display: flex;
+  justify-content: center;
+}
+.inputs-container label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.inputs-container input {
+  min-width: 350px;
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.inputs-container input:focus {
+  outline: 2px solid #d7cf07;
+}
+
+.input-group:nth-child(2) {
+  margin-left: 20px;
+}
