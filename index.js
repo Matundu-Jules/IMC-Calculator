@@ -51,8 +51,15 @@ function verifyInputs(weight, height) {
     }
 
     // Vérifier si les valeurs sont réalistes
-    if (weight <= 0 || height <= 0 || weight > 300 || height > 250) {
-        return false // Les valeurs ne reflètent pas la réalité
+    if (
+        weight <= 0 ||
+        height <= 0 ||
+        weight > 300 ||
+        height > 250 ||
+        !Number.isInteger(Number(weight)) ||
+        !Number.isInteger(Number(height))
+    ) {
+        return false // Les valeurs ne reflètent pas la réalité ou ne sont pas des entiers
     }
 
     return true // Les deux inputs sont valides

@@ -143,3 +143,14 @@ form button:hover {
     text-align: center;
   }
 }
+
+/* Supprimer comportement par défaut (zoom) du click sur un input sur mobile */
+input[type="number"] {
+  font-size: 16px;
+  -moz-appearance: textfield; /* Firefox */
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Safari */
+  margin: 0; /* Supprimer les boutons flèches */
+}
