@@ -12,23 +12,28 @@
 
 body {
   min-height: 100vh;
+  width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   background: #f1f1f1;
   padding: clamp(20px, 5vw, 50px) 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*  */
 .container {
-  max-width: 850px;
+  width: 90%;
   background-color: #363636;
   border: 1px solid #363636;
   padding: 25px;
   margin: 0 auto;
   border-radius: 5px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
-  color: #fff;
+  color: #f1f1f1;
 }
 
 h1 {
@@ -45,9 +50,14 @@ h1 span {
 }
 
 /* FORM */
+form {
+  width: 100%;
+}
 .inputs-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .inputs-container label {
   display: block;
@@ -55,17 +65,79 @@ h1 span {
   margin-left: 5px;
 }
 .inputs-container input {
-  min-width: 350px;
+  width: 100%;
   font-size: 18px;
   padding: 15px;
   border: none;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+  background: #f1f1f1;
 }
 .inputs-container input:focus {
   outline: 2px solid #d7cf07;
 }
 
-.input-group:nth-child(2) {
-  margin-left: 20px;
+.input-group {
+  width: 40%;
+  min-width: 300px;
+}
+
+form button {
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  min-width: 200px;
+  margin: 40px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #363636;
+  background: #d7cf07;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  transition: background 0.2s ease-in-out;
+}
+form button:hover {
+  background: #d7d007b4;
+}
+
+.info {
+  text-align: center;
+}
+
+.bmi-value {
+  font-size: 45px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.result {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* RESPONSIVE */
+
+/* Under 800px */
+@media (max-width: 744px) {
+  .input-group:nth-child(2) {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+
+/* Under 500px */
+@media (max-width: 500px) {
+  .input-group {
+    width: 100%;
+    min-width: auto;
+  }
+  .input-group input {
+    width: 100%;
+    min-width: auto;
+    font-size: 12px;
+  }
 }
