@@ -1,6 +1,11 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+/* Variables */
+:root {
+  --doc-height: 100%;
+}
+
 /* RESET */
 *,
 ::before,
@@ -12,6 +17,7 @@
 
 body {
   min-height: 100vh;
+  height: var(--doc-height);
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -139,6 +145,11 @@ form button:hover {
 
 /* Under 500px */
 @media (max-width: 500px) {
+  body {
+    min-height: unset;
+    height: var(--doc-height);
+    padding: 0;
+  }
   .input-group {
     width: 100%;
     min-width: auto;
@@ -146,20 +157,8 @@ form button:hover {
   .input-group input {
     width: 100%;
     min-width: auto;
-    /* font-size: 12px; */
   }
   .inputs-container label {
     text-align: center;
   }
-}
-
-/* Supprimer comportement par défaut (zoom) du click sur un input sur mobile */
-input[type="number"] {
-  font-size: 16px;
-  -moz-appearance: textfield; /* Firefox */
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none; /* Safari */
-  margin: 0; /* Supprimer les boutons flèches */
 }

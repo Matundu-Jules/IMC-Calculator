@@ -83,9 +83,17 @@ function showResult(BMI) {
     })
 
     displayBMI.textContent = BMI
-    displayBMI.style.color = '#f1f1f1'
     displayBMI.style.color = rank.color
 
     result.textContent = `Résultat : ${rank.name}`
     result.style.fontSize = '20px'
+    result.style.color = '#f1f1f1'
 }
+
+// Fix scroll vertical sur mobile
+const documentHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+}
+window.addEventListener('resize', documentHeight)
+documentHeight()
