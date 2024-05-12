@@ -1,6 +1,6 @@
 # IMC-Calculator
 
-"**[IMC Calculator](imc-calculator.julesmatundu.com)**" est une application web simple conçue pour calculer l'Indice de Masse Corporelle (IMC) et fournir un feedback instantané sur la catégorie de poids selon les critères de l'OMS.
+"**[IMC Calculator](https://imc-calculator.julesmatundu.com/)**" est une application web simple conçue pour calculer l'Indice de Masse Corporelle (IMC) et fournir un feedback instantané sur la catégorie de poids selon les critères de l'OMS.
 
 ## Fonctionnalités
 
@@ -30,4 +30,4 @@ Pour utiliser l'application en local avec Live Server:
 
 Ce projet est destiné à démontrer mes compétences en développement web et n'est pas destiné à une utilisation commerciale.
 
-Il est disponible pour visualisation sur [IMC Calculator](imc-calculator.julesmatundu.com).
+Il est disponible pour visualisation sur [IMC Calculator](https://imc-calculator.julesmatundu.com/).
