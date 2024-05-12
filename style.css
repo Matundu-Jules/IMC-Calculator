@@ -139,4 +139,7 @@ form button:hover {
     min-width: auto;
     font-size: 12px;
   }
+  .inputs-container label {
+    text-align: center;
+  }
 }
